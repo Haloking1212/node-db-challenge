@@ -54,7 +54,22 @@ Complete the following tasks:
 
 - [ ] Design the data model and use _knex migrations_ to create the database and tables needed to satisfy the following business rules:
   - [ ] a `project` can have multiple `tasks`.
+  ProjectTable
+  -------------
+  id | ProjectName
+
   - [ ] a `task` belongs to only one `project`.
+  TaskTable
+  --------
+  id | Description | Project_id
+
+  ResourceTable
+  -------------
+  id| ResourceName| Description
+
+  ProjectResources
+  -----------------
+  id | ResourceId | Project_id
   - [ ] a `project` can use multiple `resources`. Example of `resources` are: computer, conference room, microphone, delivery van.
   - [ ] the same `resource` can be used in multiple `projects`.
   - [ ] when adding `projects` the client must provide a name, the description is optional.
