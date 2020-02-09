@@ -5,7 +5,7 @@ exports.seed = function(knex) {
     .then(function () {
       // Inserts seed entries
       return knex('ResourceTable').insert([
-        { ResourceName: 'Coding Mvp', Description: null }
+        { ResourceName: 'Coding Mvp', Description: "bruh" }
       ]);
     });
 };

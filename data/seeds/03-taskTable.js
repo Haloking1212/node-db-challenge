@@ -5,7 +5,7 @@ exports.seed = function(knex) {
     .then(function () {
       // Inserts seed entries
       return knex('TaskTable').insert([
-        { TaskDescription: 'Get Full Stack Job', Notes: null, TaskCompleted: false}
+        { TaskDescription: 'Get Full Stack Job', Notes: 'blah', TaskCompleted: false, project_id: 1}
       ]);
     });
 };
